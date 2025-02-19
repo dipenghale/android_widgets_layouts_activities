@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Very First App</string>
+    <string name="hello_world">First TextView Widget</string>
+    <string name="button_three">Button3</string>
+    <string-array name="country">
+        <item>Nepal</item>
+        <item>USA</item>
+        <item>Australia</item>
+    </string-array>
+</resources>
