@@ -2,6 +2,7 @@ package com.example.myveryfirstapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -14,6 +15,7 @@ public class FirstActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d((String) "FirstActivity", "onCreate");
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_first);
@@ -38,5 +40,41 @@ public class FirstActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+    }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        Log.d((String) "FirstActivity", "onStart");
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Log.d((String) "FirstActivity", "onPause");
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        Log.d((String) "FirstActivity", "onResume");
+    }
+
+    @Override
+    public void onStop(){
+        super.onStop();
+        Log.d((String) "FirstActivity", "onStop");
+    }
+
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        Log.d((String) "MainActivity", "onDestroy");
+    }
+
+    @Override
+    public void onRestart(){
+        super.onRestart();
+        Log.d((String) "FirstActivity", "onRestart");
     }
 }
